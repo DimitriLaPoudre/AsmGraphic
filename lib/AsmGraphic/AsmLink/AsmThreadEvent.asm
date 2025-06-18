@@ -92,10 +92,12 @@ AsmThreadEvent:
         jb .no_sub
         sub byte[r13 + 8], 128
         .no_sub:
-        ; mov rdi, 'e'
+        
+        ; mov rdi, 'e'  ; print events type received
         ; call AsmPutchar
         ; movzx rdi, byte[r13 + 8]
         ; call AsmPutlnbr
+        
         lea rdi, [LINK_FUTEX]
         call AsmLock
 

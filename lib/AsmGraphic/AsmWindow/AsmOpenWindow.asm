@@ -60,25 +60,31 @@ AsmOpenWindow:
     mov r12, r8
 
     mov rdi, r12
-    mov rsi, 22
-    call AsmWaitEvent
-    mov rdi, rax
-    call AsmDalloc
-
-    mov rdi, r12
-    mov rsi, 21
-    call AsmWaitEvent
-    mov rdi, rax
-    call AsmDalloc
-
-    mov rdi, r12
     mov rsi, 19
     call AsmWaitEvent
     mov rdi, rax
     call AsmDalloc
 
     mov rdi, r12
+    mov rsi, 22
+    call AsmWaitEvent
+    mov rdi, rax
+    call AsmDalloc
+
+    mov rdi, r12
+    mov rsi, 22
+    call AsmWaitEvent
+    mov rdi, rax
+    call AsmDalloc
+
+    mov rdi, r12
     mov rsi, 9
+    call AsmWaitEvent
+    mov rdi, rax
+    call AsmDalloc
+
+    mov rdi, r12
+    mov rsi, 22
     call AsmWaitEvent
     mov rdi, rax
     call AsmDalloc

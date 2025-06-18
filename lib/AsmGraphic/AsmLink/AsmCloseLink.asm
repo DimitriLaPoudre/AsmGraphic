@@ -23,8 +23,10 @@ AsmCloseLink:
     .clear_queue:
         cmp r13, 0
         je .delete_thread
-        ; movzx rdi, byte[r13 + 8]
+
+        ; movzx rdi, byte[r13 + 8] ; print events type still in queue
         ; call AsmPutlnbr
+        
         mov r14, qword[r13]
         mov rdi, r13
         call AsmDalloc

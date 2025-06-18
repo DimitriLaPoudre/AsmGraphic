@@ -127,6 +127,7 @@ int main(int ac, char **av, char **envp)
         AsmPutlstr("AsmSetColorText error");
     if (AsmSetPositionText(text, (AsmPos){0, 18}))
         AsmPutlstr("AsmSetPositionText error");
+
     while (AsmIsOpenWindow(window)) {
         while (AsmPollEvent(&event, window))
             analyze_event(event, link, window);
