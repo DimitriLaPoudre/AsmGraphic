@@ -23,9 +23,15 @@
 #define AsmEventSpecial 33
 #define AsmEventClose 35
 
-#define AsmPurple (AsmColor){0, 200, 0, 255}
+#define AsmRed (AsmColor){0, 255, 0, 0}
 #define AsmGreen (AsmColor){0, 0, 255, 0}
+#define AsmBlue (AsmColor){0, 0, 0, 255}
+#define AsmYellow (AsmColor){0, 255, 255, 0}
+#define AsmMagenta (AsmColor){0, 0, 255, 255}
+#define AsmCyan (AsmColor){0, 255, 0, 255}
+#define AsmPurple (AsmColor){0, 200, 0, 255}
 #define AsmWhite (AsmColor){0, 255, 255, 255}
+#define AsmBlack (AsmColor){0, 0, 0, 0}
 
 //link: +0 4byte fd socket | +4 8byte thread_info | +12 8byte header | +20 request body
 // thread_info: +0 1byte futex | +1 1byte conditionnal variable | +2 4byte thread id | +6 8byte thread_stack | +14 8byte event_queue

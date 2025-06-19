@@ -8,10 +8,15 @@
 NAME = basic_game
 
 SRC = src/main.c \
+	  src/init.c \
+	  src/analyze_event.c \
+	  src/update.c \
+	  src/display.c \
+	  src/destroy.c \
 
 OBJ = $(SRC:.c=.o)
 
-CFLAGS = -z execstack -Wall -Wextra -Wno-unused-parameter -I./include -I../../include -L../../lib -lAsmGraphic -lAsmLibrary
+CFLAGS = -z execstack -fno-builtin -Wall -Wextra -I./include -I../../include -L../../lib -lAsmGraphic -lAsmLibrary
 
 all: $(NAME)
 
